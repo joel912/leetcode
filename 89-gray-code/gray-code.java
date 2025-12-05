@@ -1,6 +1,6 @@
 class Solution {
     public List<Integer> grayCode(int n) {
-        int num = 1 << n;
+        int num = (int) Math.pow(2,n);
         ArrayList<Integer> res = new ArrayList<>();
         for(int i =0;i<num;i++){
             int ans = i^(i>>1);
